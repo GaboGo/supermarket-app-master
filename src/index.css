@@ -1,0 +1,110 @@
+@import "./css/fonts.css";
+
+@import "./components/Card/Card.css";
+@import "./components/Aisle/Aisle.css";
+
+
+:root {
+  --huge-font: "Huge Avant Garde";
+  --copernicus-font: "Copernicus Book";
+  --yellow: #FFC832;
+  --red: #E61E50;
+  --blue: #04617A;
+  --light-blue: #038DB2;
+  --dark-blue: #173C46;
+  --amber: #BF6F09;
+  --light-amber: #F4B059;
+  --dark-amber: #8B4E00;
+  --pink: #BA364C;
+  --light-pink: #F26078;
+  --dark-pink: #AE233A;
+  --grey: #454545;
+  --dark-grey: #2E2E2E;
+  --white: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--copernicus-font);
+  font-size: 12px;
+  letter-spacing: -0.2px;
+  line-height: 12px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.header {
+  padding: 77px 70px 31px;
+  text-align: center;
+}
+
+.h1 {
+  font-family: var(--huge-font);
+  font-size: 80px;
+  letter-spacing: -5px;
+  line-height: 70px;
+}
+
+.h1 span:first-child {
+  color: var(--red);
+}
+
+.h1 span:last-child {
+  color: var(--yellow);
+}
+
+.h2 {
+  font-family: var(--huge-font);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -1.4px;
+  line-height: 20px;
+}
+
+.h3 {
+  font-family: var(--huge-font);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  line-height: 12px;
+}
+
+.counter {
+  margin-top: 11px;
+}
+
+.counter__description {
+  font-family: var(--huge-font);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  line-height: 16px;
+}
+
+.counter__number {
+  font-family: var(--copernicus-font);
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: -0.9px;
+  line-height: 16px;
+}

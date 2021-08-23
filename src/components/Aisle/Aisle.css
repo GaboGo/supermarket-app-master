@@ -1,0 +1,116 @@
+.Aisle {
+  text-align: center;
+  padding: 70px 0 24px;
+}
+
+.Aisle__title {
+  margin-bottom: 30px;
+}
+
+.Aisle__title::after {
+  content: '';
+  display: block;
+  background-color: currentColor;
+  width: 60px;
+  height: 4px;
+  margin: 9px auto 0;
+}
+
+.Aisle__list {
+  display: flex;
+  padding: 10px calc(9% - 7.5px) 45px;
+  overflow-x: scroll;
+}
+
+.Aisle__list::after {
+  content: '';
+  min-width: 9%;
+  display: block;
+}
+
+.Aisle__item {
+  margin: 0 7.5px;
+}
+
+/* Active state */
+.Aisle__item:hover {
+  position: relative;
+  top: -10px;
+}
+
+/* Theme */
+.Aisle:nth-child(3n+1) {
+  background-color: var(--light-blue);
+}
+
+.Aisle:nth-child(3n+2) {
+  background-color: var(--light-amber);
+}
+
+.Aisle:nth-child(3n+3) {
+  background-color: var(--light-pink);
+}
+
+.Aisle:nth-child(3n+1) .Aisle__title {
+  color: var(--dark-blue);
+}
+
+.Aisle:nth-child(3n+2) .Aisle__title {
+  color: var(--dark-amber);
+}
+
+.Aisle:nth-child(3n+3) .Aisle__title {
+  color: var(--dark-pink);
+}
+
+.Aisle:nth-child(3n+1) button {
+  color: var(--light-blue);
+}
+
+.Aisle:nth-child(3n+2) button {
+  color: var(--light-amber);
+}
+
+.Aisle:nth-child(3n+3) button {
+  color: var(--light-pink);
+}
+
+.Aisle:nth-child(3n+1) .Aisle__item {
+  box-shadow: 0 10px 20px 0px var(--blue);
+}
+
+.Aisle:nth-child(3n+2) .Aisle__item {
+  box-shadow: 0 10px 20px 0px var(--amber);
+}
+
+.Aisle:nth-child(3n+3) .Aisle__item {
+  box-shadow: 0 10px 20px 0px var(--pink);
+}
+
+.Aisle:nth-child(3n+1) .Aisle__item:hover {
+  box-shadow: 0 25px 35px -10px var(--dark-blue);
+}
+
+.Aisle:nth-child(3n+2) .Aisle__item:hover {
+  box-shadow: 0 25px 35px -10px var(--dark-amber);
+}
+
+.Aisle:nth-child(3n+3) .Aisle__item:hover {
+  box-shadow: 0 25px 35px -10px var(--dark-pink);
+}
+
+@media only screen and (max-width: 600px) {
+  .Aisle__title {
+    margin-bottom: 12px;
+    margin-left: 20px;
+    text-align: left;
+  }
+  
+  .Aisle__title::after {
+    margin: 9px 0 0;
+  }
+
+  .Aisle__list {
+    padding: 10px calc(4% - 7.5px) 45px;
+  }
+}

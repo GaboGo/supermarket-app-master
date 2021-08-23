@@ -1,0 +1,119 @@
+.Card {
+  width: 300px;
+  background-color: var(--white);
+  color: var(--grey);
+  padding: 10px 5px;
+  display: flex;
+  position: relative;
+  height: 150px;
+}
+
+.Card__image-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100px;
+  min-width: 100px;
+  margin: 15px 10px;
+}
+
+.Card__image {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.Card__counter {
+  position: absolute;
+  top:5px;
+  left: 5px;
+  font-family: var(--huge-font);
+  font-size: 14px;
+  margin: 5px;
+}
+
+.Card__textbox {
+  text-align: left;
+  padding: 5px;
+}
+
+.Card__title {
+  font-family: var(--huge-font);
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  line-height: 18px;
+  height: 2em;
+  position: relative;
+  overflow: hidden;
+  margin: 5px 0;
+}
+
+.Card__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 1em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.Card__feature {
+  margin: 10px 0;
+}
+
+.Card__feature-term {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.Card__feature-value {
+  display: inline-block;
+}
+
+.Card__feature-value::before {
+  content: " - "
+}
+
+.Card__calories {
+  position: absolute;
+  bottom: 15px;
+}
+
+.Card__add-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 8px;
+  border: var(--white);
+  border-style: none;
+  background-color: var(--white);
+}
+
+.Card__add-btn:focus {
+  border: var(--white);
+  border-style: none;
+  background-color:var(--white);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Card {
+    width: 150px;
+    height: 300px;
+    flex-direction: column;
+  }
+
+  .Card__image-wrapper {
+    margin: 20px 20px;
+  }
+
+  .Card__textbox {
+    width: 100%;
+  }
+
+  .Card__add-btn {
+    top: 10px;
+    right: 10px;
+    bottom: unset;
+    left: unset;
+  }
+}
